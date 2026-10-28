@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>リテラ｜AI検索対策の成果が、プロンプトごとにすべて見える。</title>
+<meta name="description" content="8つのAIで「おすすめされているか」を毎日チェック。対策までできるSEO / LLMOツール「リテラ」。月8,100円から。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Shippori+Mincho+B1:wght@700;800&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#17787A}a:hover{color:#0F5A5C}
+input:focus,select:focus{outline:2px solid #2C6BDB;outline-offset:1px}
+summary{list-style:none}summary::-webkit-details-marker{display:none}
+.faq-ic{transition:transform .2s ease}details[open] .faq-ic{transform:rotate(45deg)}
+details[open] summary{border-bottom:1px solid #DCE6E5}
+</style>
+<style>html{scroll-behavior:smooth}#form{scroll-margin-top:60px}</style>
+</head>
+<body>
+<div style="width: 100%; max-width: 480px; margin: 0 auto; background: #FFFFFF; color: #14191C; font-family: 'Noto Sans JP', 'Hiragino Sans', 'Yu Gothic', sans-serif; font-size: 15px; line-height: 1.8; word-break: auto-phrase; text-wrap: pretty; overflow: hidden">
+
+<header style="position: sticky; top: 0; z-index: 20; height: 60px; padding: 0 16px 0 20px; display: flex; align-items: center; justify-content: space-between; background: rgba(255,255,255,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid #E6EEED">
+<div style="height: 32px; padding: 0 12px; display: flex; align-items: center; border: 1px dashed #A9BDBA; border-radius: 6px; font-size: 12px; color: #4F5D60; letter-spacing: 0.04em">ロゴ：リテラ</div>
+<a href="#form" style="height: 40px; padding: 0 18px; display: flex; align-items: center; border-radius: 999px; background: linear-gradient(100deg, #2C6BDB 0%, #7550E0 100%); color: #FFFFFF; font-size: 13px; font-weight: 700; text-decoration: none; letter-spacing: 0.04em">資料を見る</a>
+</header>
+
+<section style="position: relative; padding: 24px 20px 44px; background: linear-gradient(165deg, #FFFFFF 0%, #F3FAF9 38%, #EEF4F8 68%, #F1EEFB 100%); overflow: hidden">
+<div aria-hidden="true" style="position: absolute; right: -70px; top: 170px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle, rgba(140, 214, 204, 0.55) 0%, rgba(140, 214, 204, 0) 70%); filter: blur(10px)"></div>
+<div aria-hidden="true" style="position: absolute; left: -110px; top: 600px; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(190, 176, 245, 0.55) 0%, rgba(190, 176, 245, 0) 70%); filter: blur(10px)"></div>
+<div aria-hidden="true" style="position: absolute; right: -40px; top: -30px; width: 300px; height: 380px; background: linear-gradient(205deg, rgba(150, 215, 205, 0.6) 0%, rgba(150, 215, 205, 0.12) 70%, rgba(150, 215, 205, 0) 100%); clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 52%)"></div>
+<div aria-hidden="true" style="position: absolute; right: -40px; top: -30px; width: 300px; height: 380px; background: linear-gradient(160deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 60%); clip-path: polygon(62% 0, 100% 0, 100% 46%)"></div>
+<div aria-hidden="true" style="position: absolute; left: -30px; top: 40px; width: 210px; height: 280px; background: linear-gradient(150deg, rgba(205, 236, 231, 0.55) 0%, rgba(255, 255, 255, 0) 80%); clip-path: polygon(0 0, 100% 30%, 35% 100%, 0 78%)"></div>
+<div aria-hidden="true" style="position: absolute; left: -60px; top: 320px; width: 560px; height: 380px; background: linear-gradient(100deg, rgba(170, 222, 214, 0.05) 0%, rgba(170, 222, 214, 0.6) 48%, rgba(170, 222, 214, 0.15) 100%); clip-path: polygon(0 56%, 100% 0, 100% 30%, 0 88%)"></div>
+<div aria-hidden="true" style="position: absolute; left: -60px; top: 320px; width: 560px; height: 380px; background: rgba(255, 255, 255, 0.9); clip-path: polygon(0 87%, 100% 29%, 100% 30.2%, 0 88.2%)"></div>
+<div aria-hidden="true" style="position: absolute; left: -60px; top: 520px; width: 560px; height: 460px; background: linear-gradient(80deg, rgba(198, 186, 246, 0.12) 0%, rgba(198, 186, 246, 0.6) 58%, rgba(198, 186, 246, 0.2) 100%); clip-path: polygon(0 72%, 100% 14%, 100% 46%, 0 100%)"></div>
+<div aria-hidden="true" style="position: absolute; left: -60px; top: 520px; width: 560px; height: 460px; background: rgba(255, 255, 255, 0.85); clip-path: polygon(0 71%, 100% 13%, 100% 14.1%, 0 72.1%)"></div>
+<div aria-hidden="true" style="position: absolute; right: -30px; top: 780px; width: 260px; height: 300px; background: linear-gradient(30deg, rgba(170, 222, 214, 0) 0%, rgba(170, 222, 214, 0.45) 100%); clip-path: polygon(100% 0, 100% 100%, 20% 100%)"></div>
+
+<div style="position: relative; display: flex; flex-direction: column; gap: 18px">
+<div style="align-self: flex-start; display: flex; align-items: stretch; font-size: 13px; font-weight: 700; line-height: 1">
+<span style="padding: 8px 10px; background: #14191C; color: #FFFFFF; letter-spacing: 0.08em">特典</span>
+<span style="padding: 8px 12px; background: #E9EDEE; color: #14191C; letter-spacing: 0.02em">LLMO完全攻略マニュアル 無料プレゼント中</span>
+</div>
+
+<h1 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', 'Yu Mincho', serif; font-weight: 800; font-size: 31px; line-height: 1.4; letter-spacing: -0.02em; white-space: nowrap; color: #14191C">AI検索対策の成果が、<br>プロンプトごとに<br><span style="display: inline-block; margin-top: 8px; padding: 2px 12px 6px; background: #1E6E73; color: #FFFFFF; font-size: 40px; line-height: 1.25">すべて見える。</span></h1>
+
+<p style="margin: 0; font-size: 14px; font-weight: 500; line-height: 1.75; white-space: nowrap; color: #2A3336">8つのAIで「おすすめされているか」を毎日チェック<br>対策までできるSEO / LLMOツール</p>
+
+<div style="position: relative; width: 350px; max-width: 100%; height: 306px; margin: 6px auto 0">
+<div style="position: absolute; left: 50px; top: 0; width: 300px; height: 238px; border-radius: 14px; background: rgba(255,255,255,0.86); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.95); box-shadow: 0 24px 50px rgba(50, 80, 120, 0.18), 0 0 0 1px rgba(200, 214, 220, 0.5)">
+<div style="height: 32px; padding: 0 12px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #EEF2F3">
+<div style="display: flex; gap: 6px">
+<span style="width: 8px; height: 8px; border-radius: 50%; background: #F2665E"></span>
+<span style="width: 8px; height: 8px; border-radius: 50%; background: #F5BD4F"></span>
+<span style="width: 8px; height: 8px; border-radius: 50%; background: #58C35A"></span>
+</div>
+<span style="font-size: 10px; color: #5F6B6E; line-height: 1">表示イメージ</span>
+</div>
+<div style="position: absolute; left: 12px; top: 44px; right: 12px; display: flex; align-items: center; gap: 8px">
+<span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #DCE3E6; display: flex; align-items: flex-end; justify-content: center; overflow: hidden">
+<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="4" fill="#AAB5BA"></circle><path d="M4 22c1-4.5 4.5-7 8-7s7 2.5 8 7" fill="#AAB5BA"></path></svg>
+</span>
+<span style="padding: 6px 12px; border-radius: 10px; background: #F1F4F6; font-size: 12px; line-height: 1.5; color: #14191C">おすすめのSEOツールは？</span>
+</div>
+<div style="position: absolute; left: 12px; top: 92px; right: 12px; display: flex; align-items: flex-start; gap: 8px">
+<span style="flex: none; width: 26px; height: 26px; border-radius: 50%; background: #FFFFFF; border: 1px solid #D5E7E5; display: flex; align-items: center; justify-content: center">
+<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c.6 4.6 2.4 7.4 10 10-7.6 2.6-9.4 5.4-10 10-.6-4.6-2.4-7.4-10-10 7.6-2.6 9.4-5.4 10-10z" fill="#3E9CB0"></path></svg>
+</span>
+<div style="flex: 1; height: 126px; padding: 8px; box-sizing: border-box; border-radius: 10px; border: 1px solid #E3EAEC; background: #FFFFFF; display: flex; flex-direction: column; gap: 4px">
+<span style="height: 18px; padding-left: 2px; font-size: 12px; line-height: 18px; color: #14191C">おすすめは次の3つです。</span>
+<div style="height: 28px; padding: 0 6px; box-sizing: border-box; border-radius: 6px; background: #E3F3F0; border: 1px solid #A7D6CF; display: flex; align-items: center; gap: 7px">
+<span style="flex: none; width: 18px; height: 18px; border-radius: 50%; background: #1E6E73; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; line-height: 1">1</span>
+<span style="flex: 1; font-size: 12.5px; font-weight: 700; line-height: 1.3; color: #14191C">自社サービス</span>
+<span style="flex: none; padding: 0 4px; border-radius: 3px; background: #FFFFFF; color: #17787A; font-size: 11px; font-weight: 700; line-height: 1.5">[1]</span>
+</div>
+<div style="height: 28px; padding: 0 6px; box-sizing: border-box; display: flex; align-items: center; gap: 7px">
+<span style="flex: none; width: 18px; height: 18px; border-radius: 50%; background: #E6EAEB; color: #4F5D60; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; line-height: 1">2</span>
+<span style="font-size: 12px; line-height: 1.3; color: #4F5D60">A社のツール</span>
+</div>
+<div style="height: 28px; padding: 0 6px; box-sizing: border-box; display: flex; align-items: center; gap: 7px">
+<span style="flex: none; width: 18px; height: 18px; border-radius: 50%; background: #E6EAEB; color: #4F5D60; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; line-height: 1">3</span>
+<span style="font-size: 12px; line-height: 1.3; color: #4F5D60">B社のツール</span>
+</div>
+</div>
+</div>
+</div>
+<svg width="350" height="306" viewBox="0 0 350 306" aria-hidden="true" style="position: absolute; left: 0; top: 0; pointer-events: none"><path d="M311.6 146 C311.6 205, 264 262, 214 262" fill="none" stroke="#1E6E73" stroke-width="1.6"></path><circle cx="214" cy="262" r="4" fill="#1E6E73"></circle></svg>
+<div style="position: absolute; left: 0; top: 226px; width: 212px; padding: 12px 12px 12px 14px; box-sizing: border-box; border-radius: 12px; background: #FFFFFF; border: 1px solid #CFE6E3; box-shadow: 0 14px 30px rgba(30, 110, 115, 0.16); display: flex; align-items: center; gap: 10px">
+<div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; gap: 6px; font-size: 11px; color: #4F5D60; line-height: 1.3">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F5D60" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"></path><path d="M14 3v5h5M9 13h6M9 17h6"></path></svg>
+<span>引用元</span>
+</div>
+<span style="font-size: 14px; font-weight: 700; line-height: 1.4; color: #14191C">自社サイト</span>
+<span style="font-size: 12px; line-height: 1.3; color: #17787A">https://example.com</span>
+</div>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F5D60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg>
+</div>
+</div>
+
+<div style="padding: 16px 14px 14px; border-radius: 12px; background: #FFFFFF; border: 1px solid #DDE6E6; box-shadow: 0 10px 28px rgba(40, 70, 90, 0.08); display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 8px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 12px; color: #4F5D60; line-height: 1.4">LLMOコンサル</span>
+<span style="position: relative; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 19px; line-height: 1.3; color: #4F5D60; white-space: nowrap">月30万円〜<span aria-hidden="true" style="position: absolute; left: -2px; right: -2px; top: 52%; height: 2px; background: #E0525A; transform: rotate(-8deg)"></span></span>
+</div>
+<svg width="22" height="14" viewBox="0 0 22 14" fill="none" stroke="#14191C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-bottom: 8px"><path d="M1 7h19M14 1l6 6-6 6"></path></svg>
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 0">
+<span style="font-size: 12px; font-weight: 700; color: #17787A; line-height: 1.4">リテラなら</span>
+<span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; color: #14191C; line-height: 1.1; white-space: nowrap"><span style="font-size: 20px">月</span><span style="font-size: 32px; letter-spacing: -0.01em">8,100</span><span style="font-size: 18px">円から</span></span>
+</div>
+</div>
+<div style="height: 1px; background: #E6ECEC"></div>
+<p style="margin: 0; text-align: center; font-size: 13px; font-weight: 500; line-height: 1.6; color: #2A3336">8つのAIでの見え方を毎日チェック。施策の提案まで。</p>
+</div>
+
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 12px; line-height: 1.4; color: #3F4A4D; white-space: nowrap">
+<span>ITreview口コミNo.1</span>
+<span aria-hidden="true" style="width: 1px; height: 12px; background: #B9C5C6"></span>
+<span>継続率<span style="color: #17787A; font-weight: 700">96%</span></span>
+<span aria-hidden="true" style="width: 1px; height: 12px; background: #B9C5C6"></span>
+<span>関連技術 特許出願中</span>
+</div>
+
+<a href="#form" style="position: relative; display: block; margin-top: 14px; text-decoration: none; color: #FFFFFF">
+<span style="position: absolute; top: -15px; left: 0; right: 0; z-index: 1; display: flex; justify-content: center"><span style="padding: 6px 16px; border-radius: 10px; background: #FFFFFF; border: 2px solid #3E4FCB; box-shadow: 0 6px 14px rgba(40, 50, 140, 0.18); color: #1C2766; font-size: 13px; font-weight: 900; line-height: 1.3; letter-spacing: 0.02em; white-space: nowrap">サービス資料＋LLMO完全攻略マニュアル</span></span>
+<span style="min-height: 78px; padding: 24px 18px 12px; box-sizing: border-box; border-radius: 999px; background: linear-gradient(100deg, #2C6BDB 0%, #7550E0 100%); box-shadow: 0 14px 28px rgba(70, 90, 220, 0.32); display: flex; align-items: center; justify-content: center; gap: 14px">
+<span style="font-size: 22px; font-weight: 900; line-height: 1.3; letter-spacing: 0.04em">無料で資料を見る</span>
+<span style="flex: none; width: 34px; height: 34px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3E4FCB" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</span>
+</a>
+</div>
+</section>
+
+<section style="position: relative; padding: 72px 20px 64px; background: linear-gradient(180deg, #FFFFFF 0%, #F2F6F6 100%); overflow: hidden; display: flex; flex-direction: column; gap: 30px">
+<span aria-hidden="true" style="position: absolute; right: -18px; top: 120px; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 220px; line-height: 1; color: rgba(30, 110, 115, 0.06)">?</span>
+<h2 style="position: relative; margin: 0; text-align: center; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 26px; line-height: 1.5; color: #14191C"><span style="display: block; font-size: 18px; color: #17787A; letter-spacing: 0.06em">AIO・LLMO</span>こんなお悩みありませんか？</h2>
+<div style="position: relative; display: flex; flex-direction: column; gap: 16px">
+<div style="position: relative; align-self: flex-start; width: 88%; padding: 16px 16px 16px 14px; box-sizing: border-box; border-radius: 16px; background: #FFFFFF; border: 1px solid #E1E9E8; box-shadow: 0 10px 24px rgba(30, 70, 80, 0.08); display: flex; align-items: center; gap: 12px">
+<span style="flex: none; width: 36px; height: 36px; border-radius: 50%; background: #E6F3F1; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9.2 9a3 3 0 1 1 4.3 2.7c-.9.4-1.5 1.2-1.5 2.2V15M12 18.5v.01"></path></svg></span>
+<p style="margin: 0; text-align: left; font-size: 15px; font-weight: 700; line-height: 1.5; color: #14191C">AI検索での<br><span style="font-size: 21px; font-weight: 900; color: #1E6E73">成果を追えていない</span></p>
+</div>
+<div style="position: relative; align-self: flex-end; width: 88%; padding: 16px 16px 16px 14px; box-sizing: border-box; border-radius: 16px; background: #FFFFFF; border: 1px solid #E1E9E8; box-shadow: 0 10px 24px rgba(30, 70, 80, 0.08); display: flex; align-items: center; gap: 12px">
+<span style="flex: none; width: 36px; height: 36px; border-radius: 50%; background: #E6F3F1; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9.2 9a3 3 0 1 1 4.3 2.7c-.9.4-1.5 1.2-1.5 2.2V15M12 18.5v.01"></path></svg></span>
+<p style="margin: 0; text-align: left; font-size: 15px; font-weight: 700; line-height: 1.5; color: #14191C"><span style="font-size: 21px; font-weight: 900; color: #1E6E73">どのプロンプトで</span><br>AIに出るか分からない</p>
+</div>
+<div style="position: relative; align-self: flex-start; width: 88%; padding: 16px 16px 16px 14px; box-sizing: border-box; border-radius: 16px; background: #FFFFFF; border: 1px solid #E1E9E8; box-shadow: 0 10px 24px rgba(30, 70, 80, 0.08); display: flex; align-items: center; gap: 12px">
+<span style="flex: none; width: 36px; height: 36px; border-radius: 50%; background: #E6F3F1; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9.2 9a3 3 0 1 1 4.3 2.7c-.9.4-1.5 1.2-1.5 2.2V15M12 18.5v.01"></path></svg></span>
+<p style="margin: 0; text-align: left; font-size: 15px; font-weight: 700; line-height: 1.5; color: #14191C">どこで<span style="font-size: 21px; font-weight: 900; color: #1E6E73">競合に</span><br><span style="font-size: 21px; font-weight: 900; color: #1E6E73">負けているか</span>分からない</p>
+</div>
+</div>
+</section>
+
+<section style="padding: 0 20px 88px; background: #FFFFFF; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 56px">
+<svg width="44" height="26" viewBox="0 0 44 26" aria-hidden="true"><path d="M0 0H44L22 26Z" fill="#1E6E73"></path></svg>
+<p style="margin: 0; font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; font-weight: 900; font-size: 40px; line-height: 1.5; letter-spacing: 0.02em; color: #14191C">AI対策の前に<br>まずは<br><span style="font-size: 52px; line-height: 1.4; color: #1E6E73">「見える化」</span><br>から</p>
+<p style="margin: 0; font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif; font-weight: 900; font-size: 26px; line-height: 1.65; letter-spacing: 0.02em; color: #14191C">見えていないまま<br>対策しても、<br>効いたのかどうかすら<br>分かりません。</p>
+</section>
+
+<section style="padding: 72px 20px 72px; background: #F1F8F7; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #1E6E73"></span>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 24px; line-height: 1.5; color: #14191C">リテラならAIの回答が、<br>プロンプトごとに<span style="color: #1E6E73">全部わかる。</span></h2>
+</div>
+<div style="border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6E5; box-shadow: 0 14px 34px rgba(30, 80, 90, 0.10); overflow: hidden">
+<div style="height: 26px; padding: 0 12px; display: flex; align-items: center; gap: 5px; border-bottom: 1px solid #EEF2F3"><span style="width: 7px; height: 7px; border-radius: 50%; background: #D5DCDE"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #D5DCDE"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #D5DCDE"></span></div>
+<div style="height: 200px; margin: 10px; border: 1px dashed #A9C3BF; border-radius: 8px; background: #F7FBFA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6E8885" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18M8 13h3M8 16h6"></path></svg>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[キャプチャ] 見える化の画面<br>（キーワード×AIごとの言及状況）</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: stretch; gap: 0">
+<div style="padding: 18px 16px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6E5; display: flex; align-items: center; gap: 16px">
+<div style="flex: none; width: 84px; height: 84px; border-radius: 12px; background: #EEF7F6; display: flex; align-items: center; justify-content: center">
+<svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="自社と競合の順位の図"><circle cx="9" cy="17" r="6" fill="#FFFFFF" stroke="#14191C" stroke-width="1.5"></circle><text x="9" y="20.2" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="9" font-weight="700" fill="#14191C">1</text><rect x="20" y="12" width="38" height="10" rx="3" fill="#C9DEDB"></rect><circle cx="9" cy="33" r="6" fill="#1E6E73"></circle><text x="9" y="36.2" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">2</text><rect x="20" y="28" width="31" height="10" rx="3" fill="#1E6E73"></rect><circle cx="9" cy="49" r="6" fill="#FFFFFF" stroke="#14191C" stroke-width="1.5"></circle><text x="9" y="52.2" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="9" font-weight="700" fill="#14191C">3</text><rect x="20" y="44" width="22" height="10" rx="3" fill="#C9DEDB"></rect></svg>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #1E6E73; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.2">STEP 1</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.5; color: #14191C">見える</h3>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.7; color: #3F4A4D">狙いたいキーワードで、自社と競合が何番目に紹介されているか</p>
+</div>
+</div>
+<svg width="20" height="28" viewBox="0 0 20 28" aria-hidden="true" style="align-self: center; margin: 4px 0"><path d="M4 10l6 7 6-7" fill="none" stroke="#1E6E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="padding: 18px 16px; border-radius: 14px; background: #FFFFFF; border: 1px solid #DCE6E5; display: flex; align-items: center; gap: 16px">
+<div style="flex: none; width: 84px; height: 84px; border-radius: 12px; background: #EEF7F6; display: flex; align-items: center; justify-content: center">
+<svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="ページを虫眼鏡で調べる図"><rect x="8" y="7" width="32" height="42" rx="3" fill="#FFFFFF" stroke="#14191C" stroke-width="1.8"></rect><path d="M14 16h20M14 23h20M14 30h12" stroke="#A9C3BF" stroke-width="2.4" stroke-linecap="round"></path><circle cx="40" cy="38" r="11.5" fill="#FFFFFF" stroke="#14191C" stroke-width="2.4"></circle><path d="M34 35h12M34 41h8" stroke="#1E6E73" stroke-width="3" stroke-linecap="round"></path><path d="M48.5 46.5l7.5 7.5" stroke="#14191C" stroke-width="4" stroke-linecap="round"></path></svg>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #1E6E73; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.2">STEP 2</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.5; color: #14191C">理由がわかる</h3>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.7; color: #3F4A4D">なぜ競合が選ばれ、自社が選ばれないのか</p>
+</div>
+</div>
+<svg width="20" height="28" viewBox="0 0 20 28" aria-hidden="true" style="align-self: center; margin: 4px 0"><path d="M4 10l6 7 6-7" fill="none" stroke="#1E6E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="padding: 18px 16px; border-radius: 14px; background: #FFFFFF; border: 1.5px solid #1E6E73; display: flex; align-items: center; gap: 16px">
+<div style="flex: none; width: 84px; height: 84px; border-radius: 12px; background: #EEF7F6; display: flex; align-items: center; justify-content: center">
+<svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="やることのチェックリストの図"><rect x="12" y="9" width="40" height="48" rx="4" fill="#FFFFFF" stroke="#14191C" stroke-width="1.8"></rect><rect x="24" y="5" width="16" height="8" rx="2" fill="#1E6E73"></rect><rect x="18" y="21" width="8" height="8" rx="1.5" fill="#1E6E73"></rect><path d="M19.8 25l2 2 3-3.8" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M31 25h15" stroke="#14191C" stroke-width="2.2" stroke-linecap="round"></path><rect x="18" y="33" width="8" height="8" rx="1.5" fill="#1E6E73"></rect><path d="M19.8 37l2 2 3-3.8" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><path d="M31 37h15" stroke="#14191C" stroke-width="2.2" stroke-linecap="round"></path><rect x="18.75" y="45.75" width="6.5" height="6.5" rx="1.5" fill="#FFFFFF" stroke="#14191C" stroke-width="1.5"></rect><path d="M31 49h10" stroke="#A9C3BF" stroke-width="2.2" stroke-linecap="round"></path></svg>
+</div>
+<div style="min-width: 0; display: flex; flex-direction: column; gap: 4px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #1E6E73; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.2">STEP 3</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.5; color: #14191C">やることが決まる</h3>
+<p style="margin: 0; font-size: 13.5px; line-height: 1.7; color: #3F4A4D">掲載を依頼する記事、作る記事、伝える強み</p>
+</div>
+</div>
+</div>
+
+<div style="margin-top: 8px; padding: 20px 16px; border-radius: 16px; background: #FFFFFF; box-shadow: 0 14px 34px rgba(30, 80, 90, 0.10); display: flex; flex-direction: column; gap: 16px">
+<div style="padding: 14px 12px 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #DDE6E6; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 6px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 12px; color: #4F5D60; line-height: 1.4">LLMOコンサル</span>
+<span style="position: relative; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.3; color: #4F5D60; white-space: nowrap">月30万円〜<span aria-hidden="true" style="position: absolute; left: -2px; right: -2px; top: 52%; height: 2px; background: #E0525A; transform: rotate(-8deg)"></span></span>
+</div>
+<svg width="20" height="14" viewBox="0 0 22 14" fill="none" stroke="#14191C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-bottom: 8px"><path d="M1 7h19M14 1l6 6-6 6"></path></svg>
+<div style="display: flex; flex-direction: column; align-items: flex-end">
+<span style="font-size: 12px; font-weight: 700; color: #17787A; line-height: 1.4">リテラなら</span>
+<span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; color: #14191C; line-height: 1.1; white-space: nowrap"><span style="font-size: 19px">月</span><span style="font-size: 30px">8,100</span><span style="font-size: 17px">円から</span></span>
+</div>
+</div>
+<div style="height: 1px; background: #E6ECEC"></div>
+<p style="margin: 0; text-align: center; font-size: 12.5px; font-weight: 500; line-height: 1.6; color: #2A3336">8つのAIでの見え方を毎日チェック。施策の提案まで。</p>
+</div>
+<a href="#form" style="position: relative; display: block; margin-top: 14px; text-decoration: none; color: #FFFFFF">
+<span style="position: absolute; top: -15px; left: 0; right: 0; z-index: 1; display: flex; justify-content: center"><span style="padding: 6px 16px; border-radius: 10px; background: #FFFFFF; border: 2px solid #3E4FCB; box-shadow: 0 6px 14px rgba(40, 50, 140, 0.18); color: #1C2766; font-size: 13px; font-weight: 900; line-height: 1.3; letter-spacing: 0.02em; white-space: nowrap">サービス資料＋LLMO完全攻略マニュアル</span></span>
+<span style="min-height: 76px; padding: 24px 18px 12px; box-sizing: border-box; border-radius: 999px; background: linear-gradient(100deg, #2C6BDB 0%, #7550E0 100%); box-shadow: 0 14px 28px rgba(70, 90, 220, 0.30); display: flex; align-items: center; justify-content: center; gap: 14px">
+<span style="font-size: 21px; font-weight: 900; line-height: 1.3; letter-spacing: 0.04em">無料で資料を見る</span>
+<span style="flex: none; width: 32px; height: 32px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#3E4FCB" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</span>
+</a>
+</div>
+</section>
+
+<section style="padding: 72px 20px 72px; background: #FFFFFF; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #1E6E73"></span>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 28px; line-height: 1.5; color: #14191C">リテラでできること</h2>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; line-height: 1"><span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 30px; color: #1E6E73">1.</span><span style="padding: 5px 10px; border-radius: 4px; background: #E3F1EF; color: #17585B; font-size: 13px; font-weight: 700; letter-spacing: 0.08em">計測</span></p>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.55; color: #14191C">狙いたいプロンプトごとに、AIの回答を<br>毎日チェック</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.85; color: #3F4A4D">「おすすめ〇〇は？」のような<strong style="font-weight: 700; color: #14191C">プロンプト登録</strong>で、<strong style="font-weight: 700; color: #14191C; background: linear-gradient(transparent 60%, #C6E8E3 60%)">8つのAI(ChatGPT、Gemini、Googleなど)での紹介のされ方を毎日記録</strong>します。対策の前後の変化も<strong style="font-weight: 700; color: #14191C">グラフで可視化</strong>。</p>
+<div style="height: 210px; border: 1px dashed #A9C3BF; border-radius: 12px; background: #F7FBFA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center">
+<span style="width: 44px; height: 44px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#FFFFFF"></path></svg></span>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[管理画面動画] キーワード×AIの言及状況・推移</span>
+</div>
+</div>
+
+<div style="height: 1px; background: #E6ECEC"></div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; line-height: 1"><span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 30px; color: #1E6E73">2.</span><span style="padding: 5px 10px; border-radius: 4px; background: #E3F1EF; color: #17585B; font-size: 13px; font-weight: 700; letter-spacing: 0.08em">分析</span></p>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.55; color: #14191C">AIが参考にしているページが分かる</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.85; color: #3F4A4D"><strong style="font-weight: 700; color: #14191C">AIが回答のためによく読んでいるページ</strong>と、<br>そこに載っている<strong style="font-weight: 700; color: #14191C; background: linear-gradient(transparent 60%, #C6E8E3 60%)">会社名やサービス名を一覧で確認</strong>できます。<br>比較メディアなのか、商品・サービスページなのか<br>といった<strong style="font-weight: 700; color: #14191C">カテゴリーまで可視化</strong>。</p>
+<div style="height: 210px; border: 1px dashed #A9C3BF; border-radius: 12px; background: #F7FBFA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center">
+<span style="width: 44px; height: 44px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#FFFFFF"></path></svg></span>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[管理画面動画] 参考記事の一覧</span>
+</div>
+</div>
+
+<div style="height: 1px; background: #E6ECEC"></div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px; line-height: 1"><span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 30px; color: #1E6E73">3.</span><span style="padding: 5px 10px; border-radius: 4px; background: #E3F1EF; color: #17585B; font-size: 13px; font-weight: 700; letter-spacing: 0.08em">施策提案</span></p>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.55; color: #14191C">選ばれるためにやることが、具体的に分かる</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.85; color: #3F4A4D"><strong style="font-weight: 700; color: #14191C">メディアに掲載を依頼</strong>するのか、<strong style="font-weight: 700; color: #14191C">自社でどんな記事を書く</strong>のか。<br>計測と分析から、<strong style="font-weight: 700; color: #14191C; background: linear-gradient(transparent 60%, #C6E8E3 60%)">実施すべき施策を提案</strong>。</p>
+<div style="height: 210px; border: 1px dashed #A9C3BF; border-radius: 12px; background: #F7FBFA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center">
+<span style="width: 44px; height: 44px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#FFFFFF"></path></svg></span>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[管理画面動画] 施策提案の画面</span>
+</div>
+</div>
+
+<div style="padding: 18px 20px; border-radius: 12px; background: #F1F8F7; display: flex; align-items: flex-start; gap: 12px">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M12 5v14M5 12h14"></path></svg>
+<p style="margin: 0; font-size: 14px; line-height: 1.8; color: #2A3336">そのほか、<strong style="font-weight: 700; color: #14191C">AI記事作成、検索順位・AIOの計測</strong>も、<span style="text-decoration: underline; text-decoration-color: #1E6E73; text-decoration-thickness: 2px; text-underline-offset: 4px">同じツールで使えます</span>。</p>
+</div>
+</section>
+
+<section style="position: relative; padding: 72px 20px 72px; background: #F4F2FB; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; right: -80px; top: 0; width: 380px; height: 320px; background: rgba(222, 214, 250, 0.7); clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 45%)"></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #1E6E73"></span>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 32px; line-height: 1.45; color: #14191C">見えるだけで、<br><span style="display: inline-block; margin-top: 6px; padding: 0 10px 4px; background: #1E6E73; color: #FFFFFF">終わらない。</span></h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.85; color: #3F4A4D">施策提案で見つかった「作るべき記事」は、そのままリテラで書けます。</p>
+</div>
+<div style="border-radius: 14px; background: #FFFFFF; border: 1px solid #E0DCF0; box-shadow: 0 14px 34px rgba(80, 60, 160, 0.10); overflow: hidden">
+<div style="height: 26px; padding: 0 12px; display: flex; align-items: center; gap: 5px; border-bottom: 1px solid #EEECF5"><span style="width: 7px; height: 7px; border-radius: 50%; background: #D8D5E3"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #D8D5E3"></span><span style="width: 7px; height: 7px; border-radius: 50%; background: #D8D5E3"></span></div>
+<div style="height: 200px; margin: 10px; border: 1px dashed #B7AED8; border-radius: 8px; background: #FAF9FE; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center">
+<span style="width: 44px; height: 44px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#FFFFFF"></path></svg></span>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[管理画面動画] 記事作成の画面<br>（提案→作成→投稿の流れ）</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; align-items: stretch">
+<div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E0DCF0; display: flex; flex-direction: column; gap: 6px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #1E6E73; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.2">STEP 1</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.5; color: #14191C">記事を提案</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.75; color: #3F4A4D">狙うキーワードに合わせて、タイトルと見出しまで揃った状態で提案</p>
+</div>
+<svg width="20" height="28" viewBox="0 0 20 28" aria-hidden="true" style="align-self: center; margin: 4px 0"><path d="M4 10l6 7 6-7" fill="none" stroke="#1E6E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1px solid #E0DCF0; display: flex; flex-direction: column; gap: 6px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #1E6E73; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.2">STEP 2</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.5; color: #14191C">自動でライティング</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.75; color: #3F4A4D">OKを押すだけで本文を作成。見出しごとの図解画像も</p>
+</div>
+<svg width="20" height="28" viewBox="0 0 20 28" aria-hidden="true" style="align-self: center; margin: 4px 0"><path d="M4 10l6 7 6-7" fill="none" stroke="#1E6E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<div style="padding: 18px 20px; border-radius: 14px; background: #FFFFFF; border: 1.5px solid #1E6E73; display: flex; flex-direction: column; gap: 6px">
+<span style="align-self: flex-start; padding: 4px 10px; border-radius: 999px; background: #1E6E73; color: #FFFFFF; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; line-height: 1.2">STEP 3</span>
+<h3 style="margin: 0; font-size: 19px; font-weight: 700; line-height: 1.5; color: #14191C">WordPressなどへ自動投稿</h3>
+<p style="margin: 0; font-size: 14px; line-height: 1.75; color: #3F4A4D">完成した記事を、そのまま自社サイトに投稿</p>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<h3 style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 700; line-height: 1.5; color: #14191C"><span>記事の質を上げる機能</span><span aria-hidden="true" style="flex: 1; height: 1px; background: #D3CDE8"></span></h3>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<div style="padding: 16px 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E0DCF0; display: flex; flex-direction: column; gap: 10px">
+<span style="width: 34px; height: 34px; border-radius: 50%; background: #E3F1EF; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10M4 12h16M4 18h7"></path><circle cx="17" cy="6" r="2.2"></circle><circle cx="14" cy="18" r="2.2"></circle></svg></span>
+<span style="font-size: 13.5px; font-weight: 700; line-height: 1.6; color: #14191C">ChatGPT・Gemini・<br><span style="white-space: nowrap; letter-spacing: -0.01em">ClaudeからAIを選べる</span></span>
+</div>
+<div style="padding: 16px 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E0DCF0; display: flex; flex-direction: column; gap: 10px">
+<span style="width: 34px; height: 34px; border-radius: 50%; background: #E3F1EF; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5z"></path></svg></span>
+<span style="font-size: 13.5px; font-weight: 700; line-height: 1.6; color: #14191C">自社の資料やサイトを<br>学習させて書ける</span>
+</div>
+<div style="padding: 16px 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E0DCF0; display: flex; flex-direction: column; gap: 10px">
+<span style="width: 34px; height: 34px; border-radius: 50%; background: #E3F1EF; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><path d="M3.5 12h17M12 3.5c2.4 2.4 3.5 5.2 3.5 8.5s-1.1 6.1-3.5 8.5c-2.4-2.4-3.5-5.2-3.5-8.5s1.1-6.1 3.5-8.5z"></path></svg></span>
+<span style="font-size: 13.5px; font-weight: 700; line-height: 1.6; color: #14191C">ウェブ検索で<br>最新情報を反映</span>
+</div>
+<div style="padding: 16px 12px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E0DCF0; display: flex; flex-direction: column; gap: 10px">
+<span style="width: 34px; height: 34px; border-radius: 50%; background: #E3F1EF; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8M4 4v4h4M4 13a8 8 0 0 0 14.3 4.9L20 16M20 20v-4h-4"></path></svg></span>
+<span style="font-size: 13.5px; font-weight: 700; line-height: 1.6; color: #14191C">既存記事の<br>リライトも可能</span>
+</div>
+</div>
+<p style="margin: 0; font-size: 12px; line-height: 1.6; color: #4F5D60">※使える機能はプランにより異なります</p>
+</div>
+</div>
+</section>
+
+<section style="padding: 72px 20px 72px; background: #FFFFFF; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #1E6E73"></span>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 27px; line-height: 1.55; color: #14191C">実際にAI検索数が<br><span style="background: linear-gradient(transparent 62%, #BDE5E0 62%)">こんなに伸びています</span></h2>
+</div>
+
+<div style="padding: 22px 18px 18px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6E5; box-shadow: 0 12px 30px rgba(30, 80, 90, 0.08); display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; background: #E3F1EF; color: #17585B; font-size: 12px; font-weight: 700; line-height: 1.4">業種：●●●●●</span>
+<p style="margin: 0; font-size: 17px; font-weight: 700; line-height: 1.4; color: #14191C">AI言及率が<br><span style="font-weight: 900; font-size: 28px; line-height: 1.2; color: #1E6E73; letter-spacing: 0.04em">●●</span><span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 42px; line-height: 1.2; color: #1E6E73">%</span><span style="font-size: 20px">アップ</span></p>
+<div style="height: 170px; border: 1px dashed #A9C3BF; border-radius: 10px; background: #F7FBFA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6E8885" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8"></path></svg>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[グラフ画像] AI言及率の推移</span>
+</div>
+</div>
+
+<div style="padding: 22px 18px 18px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6E5; box-shadow: 0 12px 30px rgba(30, 80, 90, 0.08); display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; background: #E3F1EF; color: #17585B; font-size: 12px; font-weight: 700; line-height: 1.4">業種：●●●●●</span>
+<p style="margin: 0; font-size: 17px; font-weight: 700; line-height: 1.4; color: #14191C">AI言及率が<br><span style="font-weight: 900; font-size: 28px; line-height: 1.2; color: #1E6E73; letter-spacing: 0.04em">●●</span><span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 42px; line-height: 1.2; color: #1E6E73">%</span><span style="font-size: 20px">アップ</span></p>
+<div style="height: 170px; border: 1px dashed #A9C3BF; border-radius: 10px; background: #F7FBFA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6E8885" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8"></path></svg>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[グラフ画像] AI言及率の推移</span>
+</div>
+</div>
+
+<div style="padding: 22px 18px 18px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DCE6E5; box-shadow: 0 12px 30px rgba(30, 80, 90, 0.08); display: flex; flex-direction: column; gap: 14px">
+<span style="align-self: flex-start; padding: 5px 12px; border-radius: 999px; background: #E3F1EF; color: #17585B; font-size: 12px; font-weight: 700; line-height: 1.4">業種：●●●●●</span>
+<p style="margin: 0; font-size: 17px; font-weight: 700; line-height: 1.4; color: #14191C">AI言及率が<br><span style="font-weight: 900; font-size: 28px; line-height: 1.2; color: #1E6E73; letter-spacing: 0.04em">●●</span><span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 42px; line-height: 1.2; color: #1E6E73">%</span><span style="font-size: 20px">アップ</span></p>
+<div style="height: 170px; border: 1px dashed #A9C3BF; border-radius: 10px; background: #F7FBFA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#6E8885" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M5 16l4-5 4 3 6-8"></path></svg>
+<span style="font-size: 12px; line-height: 1.6; color: #4F5D60">[グラフ画像] AI言及率の推移</span>
+</div>
+</div>
+</section>
+
+<section style="padding: 72px 20px 72px; background: #F1F8F7; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #1E6E73"></span>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 27px; line-height: 1.5; color: #14191C">こんな方におすすめです</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="padding: 16px 18px; border-radius: 12px; background: #FFFFFF; display: flex; align-items: flex-start; gap: 12px">
+<span style="flex: none; width: 24px; height: 24px; margin-top: 2px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span style="font-size: 15px; font-weight: 500; line-height: 1.7; color: #14191C">オウンドメディアや自社サイトを運営している</span>
+</div>
+<div style="padding: 16px 18px; border-radius: 12px; background: #FFFFFF; display: flex; align-items: flex-start; gap: 12px">
+<span style="flex: none; width: 24px; height: 24px; margin-top: 2px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span style="font-size: 15px; font-weight: 500; line-height: 1.7; color: #14191C">SEO・LLMOで本気で集客力を高めるため、<br>社内でリソースをかけられる</span>
+</div>
+<div style="padding: 16px 18px; border-radius: 12px; background: #FFFFFF; display: flex; align-items: flex-start; gap: 12px">
+<span style="flex: none; width: 24px; height: 24px; margin-top: 2px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span style="font-size: 15px; font-weight: 500; line-height: 1.7; color: #14191C">コンサルに頼らず、根拠を見ながら自社で運用したい</span>
+</div>
+<div style="padding: 16px 18px; border-radius: 12px; background: #FFFFFF; display: flex; align-items: flex-start; gap: 12px">
+<span style="flex: none; width: 24px; height: 24px; margin-top: 2px; border-radius: 50%; background: #1E6E73; display: flex; align-items: center; justify-content: center"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<span style="font-size: 15px; font-weight: 500; line-height: 1.7; color: #14191C">顧客のSEO・LLMO支援を行うための<br>計測と分析を行いたい</span>
+</div>
+</div>
+<p style="margin: 0; font-size: 13px; line-height: 1.8; color: #3F4A4D">これからWeb集客を始める方より、すでに施策を回していて成果を伸ばしたい方に向いています。</p>
+</section>
+
+<section style="padding: 72px 20px 72px; background: #FFFFFF; display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span aria-hidden="true" style="width: 28px; height: 3px; background: #1E6E73"></span>
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 27px; line-height: 1.5; color: #14191C">よくある質問</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px">
+<details style="border-radius: 14px; border: 1px solid #DCE6E5; overflow: hidden; background: #FFFFFF">
+<summary style="min-height: 56px; padding: 16px 18px; box-sizing: border-box; background: #F1F8F7; display: flex; align-items: flex-start; gap: 10px; font-size: 15px; font-weight: 700; line-height: 1.6; color: #14191C; cursor: pointer"><span style="flex: none; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.35; color: #1E6E73">Q.</span><span style="flex: 1">料金はいくらですか？</span><svg class="faq-ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 16px 18px; display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.85; color: #3F4A4D"><span style="flex: none; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.45; color: #8A9598">A.</span><span>プロ月8,100円、エンタープライズ月27,000円です（税別・年払いの場合）。月払いはそれぞれ9,000円、30,000円。詳細な施策まで分かるエンタープライズがおすすめです。初期費用は0円で、無料トライアルもあります。</span></p>
+</details>
+<details style="border-radius: 14px; border: 1px solid #DCE6E5; overflow: hidden; background: #FFFFFF">
+<summary style="min-height: 56px; padding: 16px 18px; box-sizing: border-box; background: #F1F8F7; display: flex; align-items: flex-start; gap: 10px; font-size: 15px; font-weight: 700; line-height: 1.6; color: #14191C; cursor: pointer"><span style="flex: none; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.35; color: #1E6E73">Q.</span><span style="flex: 1">なぜそんなに安いのですか？</span><svg class="faq-ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 16px 18px; display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.85; color: #3F4A4D"><span style="flex: none; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.45; color: #8A9598">A.</span><span>開発・デザイン・マーケティングを代表が自ら担い、使いやすさにこだわってサポートにかかるコストを抑えているためです。<br>良いモノ・サービスが正当に評価され、多額の広告費をかけなくても、消費者に届く世界を目指しています。</span></p>
+</details>
+<details style="border-radius: 14px; border: 1px solid #DCE6E5; overflow: hidden; background: #FFFFFF">
+<summary style="min-height: 56px; padding: 16px 18px; box-sizing: border-box; background: #F1F8F7; display: flex; align-items: flex-start; gap: 10px; font-size: 15px; font-weight: 700; line-height: 1.6; color: #14191C; cursor: pointer"><span style="flex: none; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.35; color: #1E6E73">Q.</span><span style="flex: 1">代理店でも使えますか？</span><svg class="faq-ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E6E73" stroke-width="2.4" stroke-linecap="round" aria-hidden="true" style="flex: none; margin-top: 3px"><path d="M12 5v14M5 12h14"></path></svg></summary>
+<p style="margin: 0; padding: 16px 18px; display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.85; color: #3F4A4D"><span style="flex: none; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.45; color: #8A9598">A.</span><span>はい。マーケティング会社・代理店の方にも多くご利用いただいています。ロゴを変えた共有リンクで、お客様に計測画面をお見せすることもできます。</span></p>
+</details>
+</div>
+</section>
+
+<section id="form" style="position: relative; padding: 72px 20px 64px; background: #0F1719; color: #FFFFFF; overflow: hidden">
+<div aria-hidden="true" style="position: absolute; left: -60px; top: 60px; width: 540px; height: 460px; background: rgba(46, 140, 135, 0.18); clip-path: polygon(0 55%, 100% 5%, 100% 30%, 0 80%)"></div>
+<div aria-hidden="true" style="position: absolute; left: -60px; top: 900px; width: 540px; height: 460px; background: rgba(117, 80, 224, 0.14); clip-path: polygon(0 40%, 100% 0, 100% 22%, 0 65%)"></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 26px; line-height: 1.6; color: #FFFFFF">このマニュアルを見ながら<br>リテラを使えば、<br>AIに選ばれる可能性は、<br><span style="display: inline-block; margin-top: 6px; padding: 0 12px 4px; background: #1E7F7C; font-size: 32px; line-height: 1.45">ぐっと上がる。</span></h2>
+
+<div style="height: 210px; border: 1px dashed rgba(255,255,255,0.35); border-radius: 12px; background: rgba(255,255,255,0.04); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center">
+<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9FB2B3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="8" height="16" rx="1"></rect><rect x="13" y="4" width="8" height="16" rx="1"></rect></svg>
+<span style="font-size: 12px; line-height: 1.6; color: #C2CFD0">[画像] サービス資料の表紙<br>＋特典マニュアルの表紙（2冊並び）</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="padding: 18px 18px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.04); display: flex; flex-direction: column; gap: 6px">
+<span style="align-self: flex-start; padding: 3px 10px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.6); font-size: 11px; font-weight: 700; line-height: 1.4; letter-spacing: 0.08em; color: #FFFFFF">資料</span>
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; line-height: 1.5; color: #FFFFFF">リテラ サービス資料</h3>
+<p style="margin: 0; font-size: 13px; line-height: 1.75; color: #C2CFD0">機能、料金、使い方の流れ</p>
+</div>
+<div style="padding: 18px 18px; border-radius: 12px; border: 1px solid #3BA7A0; background: rgba(46, 140, 135, 0.12); display: flex; flex-direction: column; gap: 6px">
+<span style="align-self: flex-start; padding: 3px 10px; border-radius: 999px; background: #1E7F7C; font-size: 11px; font-weight: 700; line-height: 1.4; letter-spacing: 0.08em; color: #FFFFFF">特典</span>
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; line-height: 1.5; color: #FFFFFF">LLMO完全攻略マニュアル</h3>
+<p style="margin: 0; font-size: 13px; line-height: 1.75; color: #C2CFD0">AIが会社／サービスを選ぶ仕組み／今日からできる具体的な施策（Q&amp;Aの置き方、比較記事への掲載の取り方）／運用の手順</p>
+</div>
+</div>
+
+<div style="padding: 14px 12px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.22); background: rgba(255,255,255,0.05); display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 6px">
+<div style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 12px; color: #C2CFD0; line-height: 1.4">LLMOコンサル</span>
+<span style="position: relative; font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; font-size: 18px; line-height: 1.3; color: #C2CFD0; white-space: nowrap">月30万円〜<span aria-hidden="true" style="position: absolute; left: -2px; right: -2px; top: 52%; height: 2px; background: #F06A72; transform: rotate(-8deg)"></span></span>
+</div>
+<svg width="20" height="14" viewBox="0 0 22 14" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-bottom: 8px"><path d="M1 7h19M14 1l6 6-6 6"></path></svg>
+<div style="display: flex; flex-direction: column; align-items: flex-end">
+<span style="font-size: 12px; font-weight: 700; color: #7FD6CC; line-height: 1.4">リテラなら</span>
+<span style="font-family: 'Shippori Mincho B1', 'Hiragino Mincho ProN', serif; font-weight: 800; color: #FFFFFF; line-height: 1.1; white-space: nowrap"><span style="font-size: 19px">月</span><span style="font-size: 30px">8,100</span><span style="font-size: 17px">円から</span></span>
+</div>
+</div>
+<div style="height: 1px; background: rgba(255,255,255,0.16)"></div>
+<p style="margin: 0; text-align: center; font-size: 12.5px; font-weight: 500; line-height: 1.6; color: #E4ECEC">8つのAIでの見え方を毎日チェック。施策の提案まで。</p>
+</div>
+
+<form action="" method="post" style="padding: 24px 18px 20px; border-radius: 16px; background: #FFFFFF; color: #14191C; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-issue" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">現在の課題<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<textarea id="f-issue" name="issue" rows="4" required style="min-height: 110px; padding: 12px 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; line-height: 1.6; font-family: inherit; color: #14191C; resize: vertical"></textarea>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-company" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">会社名<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-company" name="company" type="text" autocomplete="organization" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-name" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">氏名<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-name" name="name" type="text" autocomplete="name" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-mail" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">メールアドレス<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-mail" name="email" type="email" autocomplete="email" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-tel" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">電話番号<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-tel" name="tel" type="tel" autocomplete="tel" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
+<button type="submit" style="position: relative; display: block; width: 100%; margin-top: 22px; padding: 0; border: 0; background: none; color: #FFFFFF; font-family: inherit; cursor: pointer">
+<span style="position: absolute; top: -15px; left: 0; right: 0; z-index: 1; display: flex; justify-content: center"><span style="padding: 6px 14px; border-radius: 10px; background: #FFFFFF; border: 2px solid #3E4FCB; box-shadow: 0 6px 14px rgba(40, 50, 140, 0.18); color: #1C2766; font-size: 12.5px; font-weight: 900; line-height: 1.3; letter-spacing: 0.02em; white-space: nowrap">サービス資料＋LLMO完全攻略マニュアル</span></span>
+<span style="min-height: 76px; padding: 24px 16px 12px; box-sizing: border-box; border-radius: 999px; background: linear-gradient(100deg, #2C6BDB 0%, #7550E0 100%); box-shadow: 0 14px 28px rgba(70, 90, 220, 0.30); display: flex; align-items: center; justify-content: center; gap: 12px">
+<span style="font-size: 20px; font-weight: 900; line-height: 1.3; letter-spacing: 0.04em">無料で資料を見る</span>
+<span style="flex: none; width: 30px; height: 30px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3E4FCB" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</span>
+</button>
+</form>
+</div>
+</section>
+
+<footer style="padding: 24px 20px 28px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 12px; line-height: 1.5; color: #4F5D60">
+<span>運営：株式会社BringFlower</span>
+<span aria-hidden="true" style="width: 1px; height: 12px; background: #B9C5C6"></span>
+<a href="#" style="color: #4F5D60">プライバシーポリシー</a>
+</footer>
+
+</div>
+</body>
+</html>
