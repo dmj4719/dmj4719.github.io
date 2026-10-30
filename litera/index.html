@@ -452,7 +452,33 @@ details[open] summary{border-bottom:1px solid #DCE6E5}
 <p style="margin: 0; text-align: center; font-size: 12.5px; font-weight: 500; line-height: 1.6; color: #E4ECEC">8つのAIでの見え方を毎日チェック。施策の提案まで。</p>
 </div>
 
-<form action="thanks.html" method="post" style="padding: 24px 18px 20px; border-radius: 16px; background: #FFFFFF; color: #14191C; display: flex; flex-direction: column; gap: 16px">
+<form id="lp-form" style="padding: 24px 18px 20px; border-radius: 16px; background: #FFFFFF; color: #14191C; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-company" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">会社名<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-company" name="company" type="text" autocomplete="organization" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-name" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">お名前<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-name" name="name" type="text" autocomplete="name" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-role" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">役職<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<select id="f-role" name="role" required style="padding: 12px 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; line-height: 1.6; font-family: inherit; color: #14191C; appearance: auto">
+<option value="" disabled selected>選択してください</option>
+<option value="経営者・役員">経営者・役員</option>
+<option value="部長・マネージャー">部長・マネージャー</option>
+<option value="担当者">担当者</option>
+<option value="その他">その他</option>
+</select>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-mail" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">メールアドレス<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-mail" name="email" type="email" autocomplete="email" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="f-tel" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">電話番号<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<input id="f-tel" name="tel" type="tel" autocomplete="tel" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+</div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <label for="f-issue" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">現在の課題<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
 <select id="f-issue" name="issue" required style="padding: 12px 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; line-height: 1.6; font-family: inherit; color: #14191C; appearance: auto">
@@ -465,20 +491,15 @@ details[open] summary{border-bottom:1px solid #DCE6E5}
 </select>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<label for="f-company" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">会社名<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
-<input id="f-company" name="company" type="text" autocomplete="organization" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="f-name" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">氏名<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
-<input id="f-name" name="name" type="text" autocomplete="name" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="f-mail" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">メールアドレス<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
-<input id="f-mail" name="email" type="email" autocomplete="email" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
-</div>
-<div style="display: flex; flex-direction: column; gap: 6px">
-<label for="f-tel" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">電話番号<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
-<input id="f-tel" name="tel" type="tel" autocomplete="tel" required style="height: 50px; padding: 0 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; font-family: inherit; color: #14191C">
+<label for="f-interest" style="display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; line-height: 1.4">興味を持ったポイント<span style="padding: 2px 6px; border-radius: 4px; background: #C4314B; color: #FFFFFF; font-size: 10px; font-weight: 700; line-height: 1.3">必須</span></label>
+<select id="f-interest" name="interest" required style="padding: 12px 14px; box-sizing: border-box; border: 1px solid #C9D3D5; border-radius: 8px; background: #F8FAFA; font-size: 16px; line-height: 1.6; font-family: inherit; color: #14191C; appearance: auto">
+<option value="" disabled selected>選択してください</option>
+<option value="AI検索での自社の見え方を把握できる点">AI検索での自社の見え方を把握できる点</option>
+<option value="記事作成から公開まで一貫してできる点">記事作成から公開まで一貫してできる点</option>
+<option value="月額8,100円から始められる点">月額8,100円から始められる点</option>
+<option value="競合との比較ができる点">競合との比較ができる点</option>
+<option value="その他">その他</option>
+</select>
 </div>
 <button type="submit" style="position: relative; display: block; width: 100%; margin-top: 22px; padding: 0; border: 0; background: none; color: #FFFFFF; font-family: inherit; cursor: pointer">
 <span style="position: absolute; top: -15px; left: 0; right: 0; z-index: 1; display: flex; justify-content: center"><span style="padding: 6px 14px; border-radius: 10px; background: #FFFFFF; border: 2px solid #3E4FCB; box-shadow: 0 6px 14px rgba(40, 50, 140, 0.18); color: #1C2766; font-size: 12.5px; font-weight: 900; line-height: 1.3; letter-spacing: 0.02em; white-space: nowrap">サービス資料＋LLMO完全攻略マニュアル</span></span>
@@ -498,5 +519,29 @@ details[open] summary{border-bottom:1px solid #DCE6E5}
 </footer>
 
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+emailjs.init('yeX29dlhOPuBZwWJw');
+document.getElementById('lp-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var btn = this.querySelector('button[type="submit"]');
+  btn.disabled = true;
+  emailjs.send('service_jqi9alv', 'template_a1nyeuo', {
+    company: this.company.value,
+    name: this.name.value,
+    role: this.role.value,
+    email: this.email.value,
+    tel: this.tel.value,
+    issue: this.issue.value,
+    interest: this.interest.value,
+    page_url: window.location.href
+  }).then(function() {
+    window.location.href = 'thanks.html';
+  }, function(err) {
+    alert('送信に失敗しました。もう一度お試しください。');
+    btn.disabled = false;
+  });
+});
+</script>
 </body>
 </html>
